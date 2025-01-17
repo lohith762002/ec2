@@ -6,6 +6,7 @@ resource "aws_instance" "one" {
 count = 4
 ami = "ami-0454e52560c7f5c55"
 instance_type = "t2.medium"
+key_name = "bleach"
 vpc_security_group_ids = ["sg-03b3778957540ea86"]
 
  tags = {
